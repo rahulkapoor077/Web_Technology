@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Internal Links</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Fixed navigation styling */
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Changed from left to right */
+            background-color: #007bff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            width: 200px; /* Optional: Set a fixed width for better alignment */
+        }
+
+        /* Navigation heading */
+        nav h3 {
+            color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Navigation links */
+        nav a {
+            display: block;
+            margin: 8px 0;
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Section styling */
+        section {
+            margin: 80px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Section heading */
+        h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* Content */
+        p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        /* Hover effect for sections */
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Heading alignment to prevent overlap with fixed nav */
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #007bff;
+        }
+
+        /* Adjust body padding to prevent content being hidden behind the fixed nav */
+        body {
+            padding-right: 240px; /* Adjust based on nav width + margin */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            body {
+                padding-right: 20px;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h3>Jump to Section</h3>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+    </nav>
+
+    <h1>Interactive Internal Links Web Page</h1>
+    <p>This is an example of a web page that contains interactive internal links. Click on the links in the navigation panel to jump to the corresponding section on the same page.</p>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of Section 1. You can put any content here, including text, images, or other HTML elements.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of Section 2. This section contains different content from the first one.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content of Section 3. Feel free to add more sections and content as needed.</p>
+    </section>
+
+    <section id="section4">
+        <h2>Section 4</h2>
+        <p>This is the content of Section 4. Each section can have its unique ID for linking.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Interactive Page | All Rights Reserved
+    </footer>
+
+</body>
+</html>
